@@ -1,0 +1,24 @@
+// Banner area start here ***
+.banner {
+	&-area {
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		margin: 40px 0;
+	}
+	&__slider {
+		background-image: url("/src/assets/images/banner/banner-image1.jpg");
+		@include bg-image;
+	}
+	&__content {
+		padding: 150px 0;
+		padding-left: 75px;
+		h1 {
+			margin-bottom: 10px;
+		}
+		p {
+			max-width: 220px;
+		}
+	}
+}
+// Banner area end here ***

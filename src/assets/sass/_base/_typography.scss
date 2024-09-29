@@ -1,0 +1,277 @@
+// Typography area start here ***
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font-body;
+	color: $color-paragraph;
+	background-color: $color-white;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	color: $color-title;
+	font-family: $font-title;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 50px;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 35px;
+	font-weight: 500;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+span {
+	display: inline-block;
+	color: $color-span;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: $color-title;
+	transition: $transition;
+}
+
+a:hover {
+	color: $color-title;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+}
+// Typography area end here ***
+
+// Custom class area start here ***
+
+// Margin Top ***
+@for $i from 1 through 40 {
+	.mt-#{5 * $i} {
+		margin-top: 5px * $i;
+	}
+}
+
+/*-- Margin Bottom --*/
+@for $i from 1 through 40 {
+	.mb-#{5 * $i} {
+		margin-bottom: 5px * $i;
+	}
+}
+
+// Margin Left ***
+@for $i from 1 through 40 {
+	.ml-#{5 * $i} {
+		margin-left: 5px * $i;
+	}
+}
+
+// Margin Right***
+@for $i from 1 through 40 {
+	.mr-#{5 * $i} {
+		margin-right: 5px * $i;
+	}
+}
+
+// Padding Top ***
+@for $i from 1 through 40 {
+	.pt-#{5 * $i} {
+		padding-top: 5px * $i;
+	}
+}
+
+// Padding Bottom ***
+@for $i from 1 through 40 {
+	.pb-#{5 * $i} {
+		padding-bottom: 5px * $i;
+	}
+}
+
+//  Padding Left ***
+@for $i from 1 through 40 {
+	.pl-#{5 * $i} {
+		padding-left: 5px * $i;
+	}
+}
+
+// Padding Right ***
+@for $i from 1 through 40 {
+	.pr-#{5 * $i} {
+		padding-right: 5px * $i;
+	}
+}
+
+.bor {
+	border: 1px solid $color-border;
+}
+
+.bor-top {
+	border-top: 1px solid $color-border;
+}
+
+.bor-left {
+	border-left: 1px solid $color-border;
+}
+
+.bor-bottom {
+	border-bottom: 1px solid $color-border;
+}
+
+.bor-right {
+	border-right: 1px solid $color-border;
+}
+
+.border-none {
+	border: none !important;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.image {
+	img {
+		width: 100%;
+	}
+}
+
+.sub-bg {
+	background-color: $color-gray !important;
+}
+
+.fs-14 {
+	font-size: 14px !important;
+}
+
+.fs-16 {
+	font-size: 16px !important;
+}
+
+.fs-18 {
+	font-size: 18px !important;
+}
+
+.fs-20 {
+	font-size: 20px !important;
+}
+
+.fs-22 {
+	font-size: 22px !important;
+}
+
+.fs-24 {
+	font-size: 24px !important;
+}
+
+.fs-26 {
+	font-size: 26px !important;
+}
+
+.fs-28 {
+	font-size: 28px !important;
+}
+
+.fs-30 {
+	font-size: 30px !important;
+}
+.fs-32 {
+	font-size: 32px !important;
+}
+
+.fw-300 {
+	font-weight: 300 !important;
+}
+
+.fw-400 {
+	font-weight: 400 !important;
+}
+
+.fw-500 {
+	font-weight: 500 !important;
+}
+
+.fw-600 {
+	font-weight: 600 !important;
+}
+
+.fw-700 {
+	font-weight: 700 !important;
+}
+
+.font-title {
+	font-family: $font-title !important;
+}
+
+.font-body {
+	font-family: $font-body !important;
+}
+
+.shadow {
+	box-shadow: $shadow !important;
+}
+
+.bg-image {
+	@include bg-image;
+}
+// Custom class area end here ***

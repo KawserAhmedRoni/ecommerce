@@ -1,0 +1,57 @@
+// Button area start here ***
+.btn {
+	&-one {
+		display: inline-block;
+		font-weight: 600;
+		padding: 8px 18px;
+		border: 1px solid $color-secondary;
+		border-radius: 4px;
+		font-size: 14px;
+		transition: $transition;
+		&:hover {
+			background-color: $color-secondary;
+			color: $color-white;
+		}
+	}
+	&-two {
+		display: inline-block;
+		font-weight: 600;
+		padding: 8px 18px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		font-size: 14px;
+		transition: $transition;
+		background-color: $color-secondary;
+		color: $color-white;
+		&:hover {
+			background-color: transparent;
+			color: $color-secondary;
+			border: 1px solid $color-secondary;
+		}
+	}
+	&-pegi {
+		display: flex;
+		align-items: center;
+		gap: 7px;
+		&.center {
+			justify-content: center;
+		}
+		a {
+			color: $color-black;
+			@include radius(40px, 40px, 40px);
+			border: 1px solid $color-border;
+			transition: $transition;
+			&:hover {
+				color: $color-white;
+				background-color: $color-primary;
+				border: 1px solid $color-primary;
+			}
+			&.active {
+				color: $color-white;
+				background-color: $color-primary;
+				border: 1px solid $color-primary;
+			}
+		}
+	}
+}
+// Button area end here ***

@@ -1,0 +1,76 @@
+// Footer area start here ***
+.footer {
+	&-area {
+		overflow: hidden;
+		background-color: $color-black;
+	}
+	&__wrp {
+		display: flex;
+		padding: 60px 0;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: space-between;
+	}
+	&__item {
+		.title {
+			color: $color-white;
+			margin-bottom: 10px;
+		}
+		&.footer-about {
+			max-width: 350px;
+			width: 100%;
+		}
+		&.footer-link {
+			max-width: 150px;
+			width: 100%;
+		}
+		&.footer-contact {
+			max-width: 250px;
+			width: 100%;
+		}
+		ul {
+			li {
+				a {
+					color: #cbd0dd;
+					&:hover {
+						color: $color-primary;
+					}
+				}
+				&:not(:last-child) {
+					margin-bottom: 10px;
+				}
+			}
+		}
+		p {
+			color: #cbd0dd;
+		}
+		.social-icons {
+			margin-top: 20px;
+			a {
+				color: $color-white;
+				font-size: 18px;
+				&:not(:last-child) {
+					margin-right: 15px;
+				}
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+	&__copytext {
+		text-align: center;
+		padding: 10px 0;
+		color: $color-white;
+		border-top: 1px solid $color-border;
+		p {
+			a {
+				color: $color-white;
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+}
+// Footer area end here ***
